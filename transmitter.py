@@ -29,5 +29,5 @@ while True:
                 pass
             else:
                 os.rename(f'file_data/{file}', f'bin/misplaced_files/{file}')
-    except Exception as e:
-        print(e)
+    except:
+        pass
