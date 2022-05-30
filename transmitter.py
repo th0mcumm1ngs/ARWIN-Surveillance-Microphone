@@ -20,7 +20,7 @@ while True:
                     'audioFileString': audioFileString
                 }
 
-                requests.post(url = f'http://{systemSettings["ip_addresses"]["ARWIN_Main_Server"]}', json = dataTransmission)
+                requests.post(url = f'http://{systemSettings["ARWIN_Address"]}', json = dataTransmission)
 
                 os.rename(f'file_data/{file}', f'bin/transmitted_recordings/{file}')
                 os.rename(f'recordings/{dataFile["fileName"]}', f'bin/transmitted_recordings/{dataFile["fileName"]}')
